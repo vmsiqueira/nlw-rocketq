@@ -1,0 +1,131 @@
+.content {
+  max-width: 1120px;
+}
+
+#room header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#room header .buttons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+#room header .buttons .button:nth-child(1),
+#room header .buttons .button:nth-child(2) {
+  padding: 1.3rem 1.6rem;
+}
+
+#room header .buttons .button:nth-child(1) img {
+  margin-left: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+#room header .buttons .button:nth-child(2) img {
+  width: 2rem;
+  height: 2rem;
+}
+
+#question-form h2 {
+  font: 700 2.8rem 'Poppins', sans-serif;
+  color: var(--black);
+  line-height: 4.2rem;
+
+  margin-bottom: 2.4rem;
+}
+
+#question-form form {
+  border: 0.2rem solid var(--gray-blue);
+  padding: 1.6rem;
+  border-radius: 0 0.8rem 0.8rem 0.8rem;
+
+  margin-bottom: 1.6rem;
+}
+
+#question-form textarea {
+  resize: none;
+  background: transparent;
+  width: 100%;
+  outline: none;
+}
+
+#question-form form textarea::placeholder {
+  color: var(--gray-blue);
+}
+
+#question-form form footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#question-form form footer > div {
+  color: var(--icons-details);
+  font: 400 1.4rem 'Poppins', sans-serif;
+  display: flex;
+  gap: 0.8rem;
+}
+
+#question-form form footer button {
+  height: auto;
+  padding: 0.8rem 2.4rem;
+  line-height: 2.4rem;
+}
+
+#questions .question-wrapper {
+  background: var(--light-blue);
+  padding: 2.4rem;
+  border-radius: 0 0.8rem 0.8rem 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+#questions .question-content {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+#questions .question-content .user {
+  background: var(--blue);
+  width: 5.2rem;
+  height: 5.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  clip-path: circle();
+}
+
+#questions .question-content p {
+  word-break: break-word;
+}
+
+#questions .actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.6rem;
+}
+
+#questions .actions > a {
+  display: flex;
+  align-items: center;
+}
+
+#questions .actions > a > img {
+  margin-right: 0.8rem;
+}
+
+.question-wrapper.read {
+  background: var(--gray-medium);
+}
+
+.question-wrapper.read .question-content .user {
+  background: var(--gray-blue);
+}
+
